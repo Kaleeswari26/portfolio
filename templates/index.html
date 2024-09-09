@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <label for="about"></label>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <label for="education"></label>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <label for="resume"></label>
+                    <a href="#resume">Resume</a></li>
+                <li>
+                    <label for="contact"></label>
+                    <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="info">
+            <div>
+                <h3>Hi, I'm <span>Kaleeswari</span>.</h3>
+                <h1><span>P</span>YTHON <span>D</span>EVELOPER</h1>
+                <h4>Welcome to My Portfolio!! This is my official portfolio <br>website to showcase my all works related to web design, <br>Frontend design, and many...</h4>
+            </div>
+            <div class="">
+                <img src="{{ url_for('static', filename='images/side3p.jpeg') }}" class="girl" alt="Side Image">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/about1.jpeg') }}" class="widlap" width="80%" height="70%">
+            </div>
+            <div class="about-text">
+                <h1><span>A</span>bout <span>M</span>e</h1>
+                <h3>Developer</h3><br>
+                <p class ="para">Hello, I'm Kaleeswari, a Python Developer with a Bachelor's degree from SFR College, Sivakasi. I have further honed my skills through a specialized Python Development course in Madurai. My expertise includes frameworks and technologies such as Django, MongoDB, and Flask. Notably, I have successfully completed a project on an event management system utilizing Tkinter. I am passionate about leveraging my skills and continuously expanding my knowledge to contribute to innovative software development initiatives.<br>
+            </div>
+        </div>
+        <div class="education" id="education">
+            <div class="edu-heading">
+                <h1><center><span>E</span>ducation</center></h1><br>
+                <p><center> My education has been a journey of self-discovery and growth. <br>My educational detail are as follows.</center></p>
+                <br>
+            </div>
+            <div class="edu-content">
+                <h2>2020 - 2023</h2><br>
+                <p>From 2020 to 2023, I completed a Bachelor of Commerce in Computer Applications at S.F.R. College for Women, Sivakasi, graduating with a CGPA of <span>8.4</span> During my time there, I gained a strong foundation in computer science principles, including programming, data management, and software development. My coursework provided me with essential skills and knowledge that I have further expanded through practical experience and additional training.
+                </p><br>
+                <h2>2020</h2><br>
+                <p>In 2020, I graduated from Thiyagaraja Higher Secondary School with distinction, scoring an overall percentage of <span>86%</span>. This strong performance in my Higher Secondary Certificate (HSC) laid a solid foundation for my further studies and development in the field of computer applications.</p>
+                <br>
+                <h2>2018</h2><br>
+                <p>In 2018, I graduated from Thiyagaraja Higher Secondary School with distinction, achieving an impressive overall percentage of <span>84.5%</span> in my Secondary School Leaving Certificate (SSLC). This accomplishment demonstrated my strong academic abilities and provided a solid foundation for my continued educational journey. The skills and knowledge acquired during this period were instrumental in shaping my future academic and professional pursuits.
+                </p>
+            </div>
+        </div>
+        <div class="resume" id="resume">
+            <h1><center><span>R</span>esume</center></h1>
+            <div class="resume-content">
+                <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">View  <i class="fa-solid fa-eye"></i></a>
+                <a href="{{ url_for('static', filename='resume.pdf') }}" download>Download  <i class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1><center><span>C</span>ontact <span>M</span>e</center></h1><br>
+            <div class="contact-content">
+                <form>
+                    <div class="input-group">
+                        <input type = "text" id="name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i>  Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type = "text" id="number" required>
+                        <label for="number"><i class="fa-solid fa-phone"></i>  Phone No</label>
+                    </div>
+                    <div class="input-group">
+                        <input type = "email" id="email" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i>  Email Id</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="8" required></textarea>
+                        <label for="message"><i class="fa-solid fa-message"></i>  Your Message</label>
+                    </div>
+                    <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="icon">
+                <a href="https://linkedin.com/in/kalees26" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:munikalees26@gmail.com" ><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

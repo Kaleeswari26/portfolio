@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main {
+    width: 100%;
+    background-image: url('../images/bg3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: system-ui;
+    height: auto;
+
+}
+
+.navbar {
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height:80px;
+    background-color:#F5F7F8;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+    padding: 0;
+
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: darkslategray;
+    transition: 0.3s;
+
+}
+
+ul li a:hover {
+    color: salmon;
+    border-top-color: khaki;
+    border-bottom-color: khaki;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    padding: 2rem;
+}
+
+.info span {
+    color: darkorange;
+}
+
+
+.image {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 50%; /* Center the image */
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover img {
+    left: 55%;
+}
+.about{
+    font-family: math;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flexwrap: wrap;
+    line-height: 1.5;
+    margin-top: 20px;
+
+}
+.about-image{
+    flex:1;
+    margin-left:40px;
+    overflow: hidden;
+
+}
+.about-image img{
+    margin-top: 30%;
+    margin-left:10%;
+    display: block;
+    transition: 0.5s ease;
+}
+.about span{
+    color: darkorange;
+}
+.about-text{
+    text-align: justify;
+    margin-right: 10%;
+    margin-top: 10%;
+    flex: 1;
+}
+.education{
+    font-family: math;
+    letter-spacing: 1px;
+    padding-top: 80px;
+    margin-top: -50px;
+}
+.education span{
+    color: darkorange;
+}
+.edu-content{
+    text-align: justify;
+    margin-right: 10%;
+    margin-left:10%;
+    padding: 20px;
+    box-shadow: -1px 0 10px black;
+}
+.edu-content span{
+    color: blue;
+}
+.resume{
+     font-family: math;
+     letter-spacing: 1px;
+     padding-top: 80px;
+     margin-top: -50px;
+
+}
+.resume span{
+    color: darkorange;
+}
+.resume-content{
+     display: flex;
+     justify-content: center;
+}
+.resume-content a {
+    text-decoration: none;
+    color: white;
+    background: blue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.resume-content a:hover {
+    background: skyblue;
+}
+.contact{
+    font-family: math;
+    letter-spacing: 1px;
+    margin-top: 50px;
+
+}
+.contact span{
+    color: darkorange;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 500px;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: teal;
+    outline: none;
+    background: transparent;
+    border: 1px solid;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.icon a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon a:hover{
+    background-color: skyblue;
+}
